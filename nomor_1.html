@@ -1,0 +1,122 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>soal tes</title>
+</head>
+<body>
+  <label for="jumlah">penjumlahan</label>
+  <input type="number" id="jumlah_1" name="jumlah">
+  <input type="number" id="jumlah_2" name="jumlah">
+  <button onclick="penjumlahan()">tambah</button>
+  <div id="penjumlahan"></div>
+  <br>
+  <label for="kurang">pengurangan</label>
+  <input type="number" id="kurang_1" name="kurang">
+  <input type="number" id="kurang_2" name="kurang">
+  <button onclick="pengurangan()">kurang</button>
+  <div id="pengurangan"></div>
+  <br>
+  <label for="kali">perkalian</label>
+  <input type="number" id="kali_1" name="kali">
+  <input type="number" id="kali_2" name="kali">
+  <button onclick="perkalian()">kali</button>
+  <div id="perkalian"></div>
+  <br>
+  <label for="bagi">pembagian</label>
+  <input type="number" id="bagi_1" name="bagi">
+  <input type="number" id="bagi_2" name="bagi">
+  <button onclick="pembagian()">bagi</button>
+  <div id="pembagian"></div>
+  <br>
+</body>
+<script>
+  function penjumlahan() {
+    let a = parseInt(document.getElementById('jumlah_1').value) 
+    let b = parseInt(document.getElementById('jumlah_2').value)
+    let jml = jumlah(a, b)
+    document.getElementById('penjumlahan').innerHTML = jml
+
+    function jumlah(a, b) {
+      return a + b
+    }
+  }
+
+  function pengurangan() {
+    let a = document.getElementById('kurang_1').value 
+    let b = document.getElementById('kurang_2').value
+    let krng = kurang(a, b)
+    document.getElementById('pengurangan').innerHTML = krng
+
+    function kurang(a, b) {
+      return a - b
+    }
+  }
+
+  function perkalian() {
+    let a = document.getElementById('kali_1').value 
+    let b = document.getElementById('kali_2').value
+    let kli = kali(a, b)
+    document.getElementById('perkalian').innerHTML = kli
+
+    function kali(a, b) {
+      return a * b
+    }
+  }
+
+  function pembagian() {
+    let a = document.getElementById('bagi_1').value 
+    let b = document.getElementById('bagi_2').value
+    let bgi = bagi(a, b)
+    document.getElementById('pembagian').innerHTML = bgi
+
+    function bagi(a, b) {
+      return a / b
+    }
+  }
+</script>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="penjumlahan"></div>
+  <div id="pengurangan"></div>
+  <div id="perkalian"></div>
+  <div id="pembagian"></div>
+</body>
+<script>
+  //pemjumlahan
+  var x = penjumlahan(2, 3);
+  document.getElementById("penjumlahan").innerHTML = x;
+  function penjumlahan(a, b) {
+    return a + b;
+  }
+  //pengurangan
+  var x = pengurangan(2, 3);
+  document.getElementById("pengurangan").innerHTML = x;
+  function pengurangan(a, b) {
+    return a - b
+  }
+  //perkalian
+  var x = perkalian(2, 3);
+  document.getElementById("perkalian").innerHTML = x;
+  function perkalian(a, b) {
+    return a * b
+  }
+  //pembagian
+  var x = pembagian(2, 3);
+  document.getElementById("pembagian").innerHTML = x;
+  function pembagian(a, b) {
+    return a / b
+  }
+</script>
+</html>
